@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WecomeController {
 
+    /**
+     * Endpoint to say welcome to the user
+     * @return a simple welcome message
+     */
     @GetMapping("/welcome")
     public String sayWelcome() {
         return "Welcome to Spring Application with security";
